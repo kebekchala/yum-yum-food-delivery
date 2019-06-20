@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+    <title>Yum yum Fodd Delivery</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animsition.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet"> </head>
+
+<body>
+    <div class="site-wrapper animsition" data-animsition-in="fade-in" data-animsition-out="fade-out">
+
+        <header id="header" class="header-scroll top-header headrom">   
+            <nav class="navbar navbar-dark">
+                <div class="container">
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
+                    <a class="navbar-brand" href="index.html"> <img class="img-rounded" src="images/food-picky-logo.png" alt=""> </a>
+                    <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item"> <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link " href="food_results.html">Food</a> </li>
+                            <li class="nav-item"> <a class="nav-link " href="restaurants.html">Restaurants</a></li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <div class="dropdown-menu"> <a class="dropdown-item" href="contact.html">Contact</a> <a class="dropdown-item" href="submition.html">Submit restaurant</a> <a class="dropdown-item" href="registration.html">Registration</a>
+                                    <div class="dropdown-divider"></div> <a class="dropdown-item" href="checkout.html">Checkout</a> </div>
+                            </li>
+                             <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Login</a>
+                                <div class="dropdown-menu login-dropdown">
+                                    <form id="formLogin" class="form container-fluid">
+                                        <div class="form-group">
+                                            <label for="usr">User Name or Email</label>
+                                            <input type="text" class="form-control" id="usr">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Password</label>
+                                            <input id="pwd" type="password" class="form-control">
+                                        </div>
+                                        <button class="btn btn-block theme-btn">Login</button>
+                                    </form>
+                                    <div class="container-fluid">
+                                        <br>
+                                        <a href="#" class="large "><i>Forgot password ?</i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="page-wrapper">
+
+            <div class="top-links">
+                <div class="container">
+                    <ul class="row links">
+                        <li class="col-xs-12 col-sm-3 link-item"><span>1</span><a href="index.html">Choose Your Location</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item"><span>2</span><a href="restaurants.html">Choose Restaurant</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item active"><span>3</span><a href="profile.html">Pick Your favorite food</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item"><span>4</span><a href="checkout.html">Order and Pay online</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner-page-hero bg-image" data-image-src="images/profile-banner.jpg">
+                <div class="container"> </div>
+
+            </div>
+            <div class="result-show">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <p><span class="primary-color"><strong>124</strong></span> Results found  </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+<section class="restaurants-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                            <div class="sidebar clearfix m-b-20">
+                                <div class="main-block">
+                                    <div class="sidebar-title white-txt">
+                                        <h6>Search</h6> <i class="fa fa-cutlery pull-right"></i> </div>
+                                    <div class="input-group">
+                                        <input type="text" id="search-filter" class="form-control search-field" placeholder="Search your favorite food"> <span class="input-group-btn"> 
+                                 <button class="btn btn-secondary search-btn" type="button"><i class="fa fa-search"></i></button> 
+                                 </span> </div>
+                                   <table class="table-filter" id="filter-table">
+                                       <tr><td>Pizaa</td></tr>
+                                       <tr><td>Burger</td></tr>
+                                       <tr><td>Gomen</td></tr>
+                                       <tr><td>dinich</td></tr>
+                                       <tr><td>dore wet</td></tr>
+                                       <tr><td>shiro firifir</td></tr>
+                                       <tr><td>shekila Tibsi</td></tr>
+                                       <tr><td>Key wet</td></tr>
+                                   </table>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="widget-delivery">
+                                    <form>
+                                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                                            <label class="custom-control custom-radio">
+                                                <input id="radio2" name="radio" type="radio" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Price Filter</span> 
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="widget clearfix">
+
+                                <div class="widget-heading">
+                                    <h3 class="widget-title text-dark">
+                                 Price range
+                              </h3>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="range-slider m-b-10"> <span id="ex2CurrentSliderValLabel"> Filter by price: Max<span id="ex2SliderVal"><strong>75</strong></span>Birr</span>
+                                        <br>
+                                        <input id="ex2" type="text" data-slider-min="1" data-slider-max="300" data-slider-step="1" data-slider-value="35" /> </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 filter-block">
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 food-item">
+                                    <div class="food-item-wrap">
+                                        <div class="figure-wrap bg-image" data-image-src="images/food1.jpg">
+                                            <div class="distance"><i class="fa fa-pin"></i>1240m</div>
+                                            <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                                            <div class="review pull-right"><a href="#">198 reviews</a> </div>
+                                        </div>
+                                        <div class="content food-filter">
+                                            <h5><a href="#">South Chicken</a></h5>
+                                            <div class="product-name">Lorem ipsum dolor sit.</div>
+                                            <div class="price-btn-block"> <span class="price">149 Birr</span> <a href="profile.html" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                        </div>
+                                        <div class="restaurant-block">
+                                            <div class="left">
+                                                <a class="pull-left" href="#"> <img src="images/logo1.png" alt="Restaurant logo"> </a>
+                                                <div class="pull-left right-text"> <a href="#">Chicken Restaurant</a> <span>kilinto Gerba</span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 food-item">
+                                    <div class="food-item-wrap">
+                                        <div class="figure-wrap bg-image" data-image-src="images/food2.jpg">
+                                            <div class="distance"><i class="fa fa-pin"></i>1240m</div>
+                                            <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                                            <div class="review pull-right"><a href="#">198 reviews</a> </div>
+                                        </div>
+                                        <div class="content">
+                                            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                            <div class="product-name">Lorem ipsum dolor sit.</div>
+                                            <div class="price-btn-block"> <span class="price">188 Birr</span> <a href="profile.html" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                        </div>
+                                        <div class="restaurant-block">
+                                            <div class="left">
+                                                <a class="pull-left" href="#"> <img src="images/logo2.png" alt="Restaurant logo"> </a>
+                                                <div class="pull-left right-text"> <a href="#">Chicken Restaurant</a> <span>kilinto Gerba</span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 food-item">
+                                    <div class="food-item-wrap">
+                                        <div class="figure-wrap bg-image" data-image-src="images/food3.jpg">
+                                            <div class="distance"><i class="fa fa-pin"></i>1240m</div>
+                                            <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                                            <div class="review pull-right"><a href="#">198 reviews</a> </div>
+                                        </div>
+                                        <div class="content">
+                                            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                            <div class="product-name">Lorem ipsum dolor sit.</div>
+                                            <div class="price-btn-block"> <span class="price">282 Birr</span> <a href="profile.html" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                        </div>
+                                        <div class="restaurant-block">
+                                            <div class="left">
+                                                <a class="pull-left" href="#"> <img src="images/logo3.png" alt="Restaurant logo"> </a>
+                                                <div class="pull-left right-text"> <a href="#">Chicken Restaurant</a> <span>kilinto Gerba</span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 food-item">
+                                    <div class="food-item-wrap">
+                                        <div class="figure-wrap bg-image" data-image-src="images/food1.jpg">
+                                            <div class="distance"><i class="fa fa-pin"></i>1240m</div>
+                                            <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                                            <div class="review pull-right"><a href="#">198 reviews</a> </div>
+                                        </div>
+                                        <div class="content">
+                                            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                            <div class="product-name">Lorem ipsum dolor sit.</div>
+                                            <div class="price-btn-block"> <span class="price">123 Birr</span> <a href="profile.html" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                        </div>
+                                        <div class="restaurant-block">
+                                            <div class="left">
+                                                <a class="pull-left" href="#"> <img src="images/logo3.png" alt="Restaurant logo"> </a>
+                                                <div class="pull-left right-text"> <a href="#">Chicken Restaurant</a> <span>kilinto Gerba</span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 food-item">
+                                    <div class="food-item-wrap">
+                                        <div class="figure-wrap bg-image" data-image-src="images/food1.jpg">
+                                            <div class="distance"><i class="fa fa-pin"></i>1240m</div>
+                                            <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                                            <div class="review pull-right"><a href="#">198 reviews</a> </div>
+                                        </div>
+                                        <div class="content">
+                                            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                            <div class="product-name">Lorem ipsum dolor sit.</div>
+                                            <div class="price-btn-block"> <span class="price">174 Birr</span> <a href="profile.html" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                        </div>
+                                        <div class="restaurant-block">
+                                            <div class="left">
+                                                <a class="pull-left" href="#"> <img src="images/logo3.png" alt="Restaurant logo"> </a>
+                                                <div class="pull-left right-text"> <a href="#">Chicken Restaurant</a> <span>kilinto Gerba</span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 food-item">
+                                    <div class="food-item-wrap">
+                                        <div class="figure-wrap bg-image" data-image-src="images/food1.jpg">
+                                            <div class="distance"><i class="fa fa-pin"></i>1240m</div>
+                                            <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                                            <div class="review pull-right"><a href="#">198 reviews</a> </div>
+                                        </div>
+                                        <div class="content">
+                                            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                            <div class="product-name">Lorem ipsum dolor sit.</div>
+                                            <div class="price-btn-block"> <span class="price">153 Birr</span> <a href="profile.html" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                        </div>
+                                        <div class="restaurant-block">
+                                            <div class="left">
+                                                <a class="pull-left" href="#"> <img src="images/logo3.png" alt="Restaurant logo"> </a>
+                                                <div class="pull-left right-text"> <a href="#">Chicken Restaurant</a> <span>kilinto Gerba</span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-label="Previous"> <span aria-hidden="true">«</span> <span class="sr-only">Previous</span> </a>
+                                            </li>
+                                            <li class="page-item active"> <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a> </li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">»</span> <span class="sr-only">Next</span> </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+           <footer class="footer">
+            <div class="container">
+
+                <div class="row top-footer">
+                    <div class="col-xs-12 col-sm-3 footer-logo-block color-gray">
+                        <a href="#"> <img src="images/food-picky-logo.png" alt="Footer logo"> </a> <span>Yum yum Fodd Delivery</span> </div>
+                    <div class="col-xs-12 col-sm-2 about color-gray">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">About us</a> </li>
+                            <li><a href="#">Our Team</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 how-it-works-links color-gray">
+                        <h5>How it Works</h5>
+                        <ul>
+                            <li><a href="#">Enter your location</a> </li>
+                            <li><a href="#">Choose restaurant</a> </li>
+                            <li><a href="#">Choose meal</a> </li>
+                            <li><a href="#">Pay via credit card</a> </li>
+                            <li><a href="#">Wait for delivery</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 pages color-gray">
+                        <h5>Pages</h5>
+                        <ul>
+                            <li><a href="#">Search results page</a> </li>
+                            <li><a href="#">User Sing Up Page</a> </li>
+                            <li><a href="#">Make order</a> </li>
+                            <li><a href="#">Add to Zembil</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 popular-locations color-gray">
+                        <h5>Popular locations</h5>
+                        <ul>
+                            <li><a href="#">Addis Ababa</a> </li>
+                            <li><a href="#">Adama</a> </li>
+                            <li><a href="#">Bahardar</a> </li>
+                            <li><a href="#">Bishoftu</a> </li>
+                            <li><a href="#">Mekele</a> </li>
+                            <li><a href="#">Harar</a> </li>
+                            <li><a href="#">Hawasa</a> </li>
+                            <li><a href="#">Gonder</a> </li>
+                            <li><a href="#">Jima</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-footer">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 payment-options color-gray">
+                            <h5>Payment Options</h5>
+                            <ul>
+                                <li>
+                                    <a href="#"> <img src="images/paypal.png" alt="Paypal"> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="images/mastercard.png" alt="Mastercard"> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="images/maestro.png" alt="Awash Bank"> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="images/commercila.png" alt="Commercial Bank"> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="images/amole.png" alt="Amole coin"> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 address color-gray">
+                            <h5>Address</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, consectetur! Sit saepe officia ex nesciunt facilis?</p>
+                            <h5>Phone: <a href="tel:+251900000000">09 00-00-00-00</a></h5> </div>
+                        <div class="col-xs-12 col-sm-5 additional-info color-gray">
+                            <h5>Addition informations</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos repellendus delectus iste, blanditiis doloremque facilis.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/headroom.js"></script>
+    <script src="js/foodpicky.min.js"></script>
+</body>
+
+</html>
